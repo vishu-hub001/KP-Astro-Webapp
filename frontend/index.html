@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KP Sthira · KP Astrology Workbench</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2326365c'/%3E%3Cpath d='M32 6 L38.5 25.5 L58 32 L38.5 38.5 L32 58 L25.5 38.5 L6 32 L25.5 25.5 Z' fill='%23a9762c'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23f2e6cf'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2326365c'/%3E%3Cpath d='M32 6 L38.5 25.5 L58 32 L38.5 38.5 L32 58 L25.5 38.5 L6 32 L25.5 25.5 Z' fill='%23a9762c'/%3E%3Ccircle cx='32' cy='32' r='4' fill='%23f2e6cf'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="brand">
+      <div class="brand-mark">✦</div>
+      <div class="brand-text">
+        <div class="brand-title">KP STHIRA</div>
+        <div class="brand-tagline">Krishnamurti Paddhati workbench</div>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="tb-status" id="apiStatus"><span class="dot"></span>Checking API…</div>
+      <div class="entry-menu">
+        <button class="entry-trigger" id="entry-trigger">Birth details <span class="caret">▾</span></button>
+        <div class="entry-popover" id="entry-popover">
+          <div class="tb-field name"><label>Name</label><input type="text" id="tb-name" placeholder="Querent"></div>
+          <div class="tb-field"><label>Date (YYYY-MM-DD)</label><input type="date" id="tb-date"></div>
+          <div class="tb-field"><label>Time (HH:MM:SS)</label><input type="time" step="1" id="tb-time"></div>
+          <div class="tb-field city">
+            <label>City (auto-search)</label>
+            <input type="text" id="tb-city" placeholder="Type a city…" autocomplete="off">
+            <div class="city-suggest" id="city-suggest"></div>
+          </div>
+          <div class="tb-field-row">
+            <div class="tb-field"><label>Latitude</label><input type="number" step="any" id="tb-lat" placeholder="28.6139"></div>
+            <div class="tb-field"><label>Longitude</label><input type="number" step="any" id="tb-lng" placeholder="77.2090"></div>
+          </div>
+          <div class="tb-field"><label>Timezone ±h</label><input type="number" step="0.25" id="tb-tz" placeholder="5.5"></div>
+          <button class="tb-calc" id="tb-calc">Calculate ✦</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subtitle-bar" id="subtitle-bar"></div>
+
+  <div class="body">
+    <div class="sidebar-scrim" id="sidebar-scrim"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sb-section">
+        <div class="sb-title">Profiles</div>
+        <select class="profile-select" id="profile-select"><option value="">— select saved profile —</option></select>
+        <div class="sb-btnrow">
+          <button class="sb-btn" id="sb-save">Save</button>
+          <button class="sb-btn danger" id="sb-del">Del</button>
+        </div>
+      </div>
+
+      <nav class="sb-nav">
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Overview</div>
+          <button class="nav-btn active" data-view="overview" data-title="General overview" data-sub="Lagna, running dasha, retrograde &amp; combustion flags at a glance"><span class="ic">◈</span>General overview</button>
+        </div>
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Charts analysis</div>
+          <button class="nav-btn" data-view="chart" data-title="Chart analysis" data-sub="D1 · Placidus cusps · Krishnamurti ayanamsa"><span class="ic">◆</span>Chart analysis</button>
+          <button class="nav-btn" data-view="planets" data-title="Planets analysis" data-sub="Sign, nakshatra, pada, star lord and sub lord for every planet"><span class="ic">☉</span>Planets analysis</button>
+          <button class="nav-btn" data-view="houses" data-title="House analysis" data-sub="Cusp sub-lords and the four-level KP house significators"><span class="ic">⌂</span>House analysis</button>
+          <button class="nav-btn" data-view="rashi" data-title="Rashi analysis" data-sub="The chart re-read sign by sign"><span class="ic">◎</span>Rashi analysis</button>
+          <button class="nav-btn" data-view="nakshatra" data-title="Nakshatra analysis" data-sub="The chart re-read nakshatra by nakshatra"><span class="ic">✦</span>Nakshatra analysis</button>
+          <button class="nav-btn" data-view="life" data-title="Life overview" data-sub="Self, wealth, career, marriage, health, education and more — read house by house"><span class="ic">✚</span>Life overview</button>
+        </div>
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Timing</div>
+          <button class="nav-btn" data-view="dasha" data-title="Vimshottari dasha" data-sub="Mahadasha → antardasha → pratyantardasha, from the natal moon's nakshatra"><span class="ic">☾</span>Dasha analysis</button>
+        </div>
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Tools</div>
+          <button class="nav-btn" data-view="horary" data-title="Horary judgment" data-sub="Prashna cast for the moment of judgment, checked against the ruling planets"><span class="ic">?</span>Horary (Prashna)</button>
+        </div>
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Data</div>
+          <button class="nav-btn" data-view="profiles" data-title="Manage profiles" data-sub="Birth data saved on the server, reusable across every tool here"><span class="ic">☰</span>Manage profiles</button>
+          <button class="nav-btn" data-view="settings" data-title="Settings" data-sub="How this instance is configured"><span class="ic">⚙</span>Settings</button>
+        </div>
+      </nav>
+
+      <div class="sb-foot">Sthira runs entirely against your local KP Astro API. Nothing here leaves your machine (city search excepted — see Settings).</div>
+    </aside>
+
+    <main>
+      <div class="view-header">
+        <div><h2 id="view-title">General overview</h2><div class="sub" id="view-sub">Lagna, running dasha, retrograde &amp; combustion flags at a glance</div></div>
+      </div>
+      <div id="main-content"></div>
+    </main>
+  </div>
+</div>
+
+<script>
+  // Mobile nav toggle — independent of app.js so it works regardless of load order.
+  (function(){
+    var toggle = document.getElementById('menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    var scrim = document.getElementById('sidebar-scrim');
+    if(!toggle || !sidebar || !scrim) return;
+
+    function openNav(){
+      sidebar.classList.add('open');
+      scrim.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded','true');
+      document.body.classList.add('nav-open');
+    }
+    function closeNav(){
+      sidebar.classList.remove('open');
+      scrim.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      document.body.classList.remove('nav-open');
+    }
+    toggle.addEventListener('click', function(){
+      sidebar.classList.contains('open') ? closeNav() : openNav();
+    });
+    scrim.addEventListener('click', closeNav);
+    // Close the drawer whenever a nav button is tapped (mobile UX).
+    sidebar.addEventListener('click', function(e){
+      if(e.target.closest('.nav-btn') && window.matchMedia('(max-width: 900px)').matches){
+        closeNav();
+      }
+    });
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 900) closeNav();
+    });
+  })();
+</script>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

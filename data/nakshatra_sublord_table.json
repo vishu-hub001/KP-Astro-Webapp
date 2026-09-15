@@ -1,0 +1,4862 @@
+[
+  {
+    "id": 0,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Ketu",
+    "start_deg": 0.0,
+    "end_deg": 0.777778,
+    "start_dms": {
+      "deg": 0,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 0,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 1,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Venus",
+    "start_deg": 0.777778,
+    "end_deg": 3.0,
+    "start_dms": {
+      "deg": 0,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 2,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 2,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Sun",
+    "start_deg": 3.0,
+    "end_deg": 3.666667,
+    "start_dms": {
+      "deg": 2,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 3,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 3,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Moon",
+    "start_deg": 3.666667,
+    "end_deg": 4.777778,
+    "start_dms": {
+      "deg": 3,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 4,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 4,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Mars",
+    "start_deg": 4.777778,
+    "end_deg": 5.555556,
+    "start_dms": {
+      "deg": 4,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 5,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 5,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Rahu",
+    "start_deg": 5.555556,
+    "end_deg": 7.555556,
+    "start_dms": {
+      "deg": 5,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 7,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 6,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Jupiter",
+    "start_deg": 7.555556,
+    "end_deg": 9.333333,
+    "start_dms": {
+      "deg": 7,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 9,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 7,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Saturn",
+    "start_deg": 9.333333,
+    "end_deg": 11.444444,
+    "start_dms": {
+      "deg": 9,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 11,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 8,
+    "nakshatra": "Ashwini",
+    "nakshatra_index": 1,
+    "sign": "Aries",
+    "star_lord": "Ketu",
+    "sub_lord": "Mercury",
+    "start_deg": 11.444444,
+    "end_deg": 13.333333,
+    "start_dms": {
+      "deg": 11,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 13,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 9,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Venus",
+    "start_deg": 13.333333,
+    "end_deg": 15.555556,
+    "start_dms": {
+      "deg": 13,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 15,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 10,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Sun",
+    "start_deg": 15.555556,
+    "end_deg": 16.222222,
+    "start_dms": {
+      "deg": 15,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 16,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 11,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Moon",
+    "start_deg": 16.222222,
+    "end_deg": 17.333333,
+    "start_dms": {
+      "deg": 16,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 17,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 12,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Mars",
+    "start_deg": 17.333333,
+    "end_deg": 18.111111,
+    "start_dms": {
+      "deg": 17,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 18,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 13,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Rahu",
+    "start_deg": 18.111111,
+    "end_deg": 20.111111,
+    "start_dms": {
+      "deg": 18,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 20,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 14,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Jupiter",
+    "start_deg": 20.111111,
+    "end_deg": 21.888889,
+    "start_dms": {
+      "deg": 20,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 21,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 15,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Saturn",
+    "start_deg": 21.888889,
+    "end_deg": 24.0,
+    "start_dms": {
+      "deg": 21,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 24,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 16,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Mercury",
+    "start_deg": 24.0,
+    "end_deg": 25.888889,
+    "start_dms": {
+      "deg": 24,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 25,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 17,
+    "nakshatra": "Bharani",
+    "nakshatra_index": 2,
+    "sign": "Aries",
+    "star_lord": "Venus",
+    "sub_lord": "Ketu",
+    "start_deg": 25.888889,
+    "end_deg": 26.666667,
+    "start_dms": {
+      "deg": 25,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 26,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 18,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Aries",
+    "star_lord": "Sun",
+    "sub_lord": "Sun",
+    "start_deg": 26.666667,
+    "end_deg": 27.333333,
+    "start_dms": {
+      "deg": 26,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 27,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 19,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Aries",
+    "star_lord": "Sun",
+    "sub_lord": "Moon",
+    "start_deg": 27.333333,
+    "end_deg": 28.444444,
+    "start_dms": {
+      "deg": 27,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 28,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 20,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Aries",
+    "star_lord": "Sun",
+    "sub_lord": "Mars",
+    "start_deg": 28.444444,
+    "end_deg": 29.222222,
+    "start_dms": {
+      "deg": 28,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 29,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 21,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Aries",
+    "star_lord": "Sun",
+    "sub_lord": "Rahu",
+    "start_deg": 29.222222,
+    "end_deg": 31.222222,
+    "start_dms": {
+      "deg": 29,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 31,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 22,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Taurus",
+    "star_lord": "Sun",
+    "sub_lord": "Jupiter",
+    "start_deg": 31.222222,
+    "end_deg": 33.0,
+    "start_dms": {
+      "deg": 31,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 33,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 23,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Taurus",
+    "star_lord": "Sun",
+    "sub_lord": "Saturn",
+    "start_deg": 33.0,
+    "end_deg": 35.111111,
+    "start_dms": {
+      "deg": 33,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 35,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 24,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Taurus",
+    "star_lord": "Sun",
+    "sub_lord": "Mercury",
+    "start_deg": 35.111111,
+    "end_deg": 37.0,
+    "start_dms": {
+      "deg": 35,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 37,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 25,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Taurus",
+    "star_lord": "Sun",
+    "sub_lord": "Ketu",
+    "start_deg": 37.0,
+    "end_deg": 37.777778,
+    "start_dms": {
+      "deg": 37,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 37,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 26,
+    "nakshatra": "Krittika",
+    "nakshatra_index": 3,
+    "sign": "Taurus",
+    "star_lord": "Sun",
+    "sub_lord": "Venus",
+    "start_deg": 37.777778,
+    "end_deg": 40.0,
+    "start_dms": {
+      "deg": 37,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 40,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 27,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Moon",
+    "start_deg": 40.0,
+    "end_deg": 41.111111,
+    "start_dms": {
+      "deg": 40,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 41,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 28,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Mars",
+    "start_deg": 41.111111,
+    "end_deg": 41.888889,
+    "start_dms": {
+      "deg": 41,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 41,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 29,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Rahu",
+    "start_deg": 41.888889,
+    "end_deg": 43.888889,
+    "start_dms": {
+      "deg": 41,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 43,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 30,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Jupiter",
+    "start_deg": 43.888889,
+    "end_deg": 45.666667,
+    "start_dms": {
+      "deg": 43,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 45,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 31,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Saturn",
+    "start_deg": 45.666667,
+    "end_deg": 47.777778,
+    "start_dms": {
+      "deg": 45,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 47,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 32,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Mercury",
+    "start_deg": 47.777778,
+    "end_deg": 49.666667,
+    "start_dms": {
+      "deg": 47,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 49,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 33,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Ketu",
+    "start_deg": 49.666667,
+    "end_deg": 50.444444,
+    "start_dms": {
+      "deg": 49,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 50,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 34,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Venus",
+    "start_deg": 50.444444,
+    "end_deg": 52.666667,
+    "start_dms": {
+      "deg": 50,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 52,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 35,
+    "nakshatra": "Rohini",
+    "nakshatra_index": 4,
+    "sign": "Taurus",
+    "star_lord": "Moon",
+    "sub_lord": "Sun",
+    "start_deg": 52.666667,
+    "end_deg": 53.333333,
+    "start_dms": {
+      "deg": 52,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 53,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 36,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Taurus",
+    "star_lord": "Mars",
+    "sub_lord": "Mars",
+    "start_deg": 53.333333,
+    "end_deg": 54.111111,
+    "start_dms": {
+      "deg": 53,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 54,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 37,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Taurus",
+    "star_lord": "Mars",
+    "sub_lord": "Rahu",
+    "start_deg": 54.111111,
+    "end_deg": 56.111111,
+    "start_dms": {
+      "deg": 54,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 56,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 38,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Taurus",
+    "star_lord": "Mars",
+    "sub_lord": "Jupiter",
+    "start_deg": 56.111111,
+    "end_deg": 57.888889,
+    "start_dms": {
+      "deg": 56,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 57,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 39,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Taurus",
+    "star_lord": "Mars",
+    "sub_lord": "Saturn",
+    "start_deg": 57.888889,
+    "end_deg": 60.0,
+    "start_dms": {
+      "deg": 57,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 59,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 40,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Taurus",
+    "star_lord": "Mars",
+    "sub_lord": "Mercury",
+    "start_deg": 60.0,
+    "end_deg": 61.888889,
+    "start_dms": {
+      "deg": 59,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 61,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 41,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Gemini",
+    "star_lord": "Mars",
+    "sub_lord": "Ketu",
+    "start_deg": 61.888889,
+    "end_deg": 62.666667,
+    "start_dms": {
+      "deg": 61,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 62,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 42,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Gemini",
+    "star_lord": "Mars",
+    "sub_lord": "Venus",
+    "start_deg": 62.666667,
+    "end_deg": 64.888889,
+    "start_dms": {
+      "deg": 62,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 64,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 43,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Gemini",
+    "star_lord": "Mars",
+    "sub_lord": "Sun",
+    "start_deg": 64.888889,
+    "end_deg": 65.555556,
+    "start_dms": {
+      "deg": 64,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 65,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 44,
+    "nakshatra": "Mrigashira",
+    "nakshatra_index": 5,
+    "sign": "Gemini",
+    "star_lord": "Mars",
+    "sub_lord": "Moon",
+    "start_deg": 65.555556,
+    "end_deg": 66.666667,
+    "start_dms": {
+      "deg": 65,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 66,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 45,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Rahu",
+    "start_deg": 66.666667,
+    "end_deg": 68.666667,
+    "start_dms": {
+      "deg": 66,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 68,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 46,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Jupiter",
+    "start_deg": 68.666667,
+    "end_deg": 70.444444,
+    "start_dms": {
+      "deg": 68,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 70,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 47,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Saturn",
+    "start_deg": 70.444444,
+    "end_deg": 72.555556,
+    "start_dms": {
+      "deg": 70,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 72,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 48,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Mercury",
+    "start_deg": 72.555556,
+    "end_deg": 74.444444,
+    "start_dms": {
+      "deg": 72,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 74,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 49,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Ketu",
+    "start_deg": 74.444444,
+    "end_deg": 75.222222,
+    "start_dms": {
+      "deg": 74,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 75,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 50,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Venus",
+    "start_deg": 75.222222,
+    "end_deg": 77.444444,
+    "start_dms": {
+      "deg": 75,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 77,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 51,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Sun",
+    "start_deg": 77.444444,
+    "end_deg": 78.111111,
+    "start_dms": {
+      "deg": 77,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 78,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 52,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Moon",
+    "start_deg": 78.111111,
+    "end_deg": 79.222222,
+    "start_dms": {
+      "deg": 78,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 79,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 53,
+    "nakshatra": "Ardra",
+    "nakshatra_index": 6,
+    "sign": "Gemini",
+    "star_lord": "Rahu",
+    "sub_lord": "Mars",
+    "start_deg": 79.222222,
+    "end_deg": 80.0,
+    "start_dms": {
+      "deg": 79,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 80,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 54,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Jupiter",
+    "start_deg": 80.0,
+    "end_deg": 81.777778,
+    "start_dms": {
+      "deg": 80,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 81,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 55,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Saturn",
+    "start_deg": 81.777778,
+    "end_deg": 83.888889,
+    "start_dms": {
+      "deg": 81,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 83,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 56,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mercury",
+    "start_deg": 83.888889,
+    "end_deg": 85.777778,
+    "start_dms": {
+      "deg": 83,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 85,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 57,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Ketu",
+    "start_deg": 85.777778,
+    "end_deg": 86.555556,
+    "start_dms": {
+      "deg": 85,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 86,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 58,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Venus",
+    "start_deg": 86.555556,
+    "end_deg": 88.777778,
+    "start_dms": {
+      "deg": 86,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 88,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 59,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Sun",
+    "start_deg": 88.777778,
+    "end_deg": 89.444444,
+    "start_dms": {
+      "deg": 88,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 89,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 60,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Gemini",
+    "star_lord": "Jupiter",
+    "sub_lord": "Moon",
+    "start_deg": 89.444444,
+    "end_deg": 90.555556,
+    "start_dms": {
+      "deg": 89,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 90,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 61,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Cancer",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mars",
+    "start_deg": 90.555556,
+    "end_deg": 91.333333,
+    "start_dms": {
+      "deg": 90,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 91,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 62,
+    "nakshatra": "Punarvasu",
+    "nakshatra_index": 7,
+    "sign": "Cancer",
+    "star_lord": "Jupiter",
+    "sub_lord": "Rahu",
+    "start_deg": 91.333333,
+    "end_deg": 93.333333,
+    "start_dms": {
+      "deg": 91,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 93,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 63,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Saturn",
+    "start_deg": 93.333333,
+    "end_deg": 95.444444,
+    "start_dms": {
+      "deg": 93,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 95,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 64,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Mercury",
+    "start_deg": 95.444444,
+    "end_deg": 97.333333,
+    "start_dms": {
+      "deg": 95,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 97,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 65,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Ketu",
+    "start_deg": 97.333333,
+    "end_deg": 98.111111,
+    "start_dms": {
+      "deg": 97,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 98,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 66,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Venus",
+    "start_deg": 98.111111,
+    "end_deg": 100.333333,
+    "start_dms": {
+      "deg": 98,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 100,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 67,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Sun",
+    "start_deg": 100.333333,
+    "end_deg": 101.0,
+    "start_dms": {
+      "deg": 100,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 101,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 68,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Moon",
+    "start_deg": 101.0,
+    "end_deg": 102.111111,
+    "start_dms": {
+      "deg": 101,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 102,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 69,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Mars",
+    "start_deg": 102.111111,
+    "end_deg": 102.888889,
+    "start_dms": {
+      "deg": 102,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 102,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 70,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Rahu",
+    "start_deg": 102.888889,
+    "end_deg": 104.888889,
+    "start_dms": {
+      "deg": 102,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 104,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 71,
+    "nakshatra": "Pushya",
+    "nakshatra_index": 8,
+    "sign": "Cancer",
+    "star_lord": "Saturn",
+    "sub_lord": "Jupiter",
+    "start_deg": 104.888889,
+    "end_deg": 106.666667,
+    "start_dms": {
+      "deg": 104,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 106,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 72,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Mercury",
+    "start_deg": 106.666667,
+    "end_deg": 108.555556,
+    "start_dms": {
+      "deg": 106,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 108,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 73,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Ketu",
+    "start_deg": 108.555556,
+    "end_deg": 109.333333,
+    "start_dms": {
+      "deg": 108,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 109,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 74,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Venus",
+    "start_deg": 109.333333,
+    "end_deg": 111.555556,
+    "start_dms": {
+      "deg": 109,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 111,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 75,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Sun",
+    "start_deg": 111.555556,
+    "end_deg": 112.222222,
+    "start_dms": {
+      "deg": 111,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 112,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 76,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Moon",
+    "start_deg": 112.222222,
+    "end_deg": 113.333333,
+    "start_dms": {
+      "deg": 112,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 113,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 77,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Mars",
+    "start_deg": 113.333333,
+    "end_deg": 114.111111,
+    "start_dms": {
+      "deg": 113,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 114,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 78,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Rahu",
+    "start_deg": 114.111111,
+    "end_deg": 116.111111,
+    "start_dms": {
+      "deg": 114,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 116,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 79,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Jupiter",
+    "start_deg": 116.111111,
+    "end_deg": 117.888889,
+    "start_dms": {
+      "deg": 116,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 117,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 80,
+    "nakshatra": "Ashlesha",
+    "nakshatra_index": 9,
+    "sign": "Cancer",
+    "star_lord": "Mercury",
+    "sub_lord": "Saturn",
+    "start_deg": 117.888889,
+    "end_deg": 120.0,
+    "start_dms": {
+      "deg": 117,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 120,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 81,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Ketu",
+    "start_deg": 120.0,
+    "end_deg": 120.777778,
+    "start_dms": {
+      "deg": 120,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 120,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 82,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Venus",
+    "start_deg": 120.777778,
+    "end_deg": 123.0,
+    "start_dms": {
+      "deg": 120,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 123,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 83,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Sun",
+    "start_deg": 123.0,
+    "end_deg": 123.666667,
+    "start_dms": {
+      "deg": 123,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 123,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 84,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Moon",
+    "start_deg": 123.666667,
+    "end_deg": 124.777778,
+    "start_dms": {
+      "deg": 123,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 124,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 85,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Mars",
+    "start_deg": 124.777778,
+    "end_deg": 125.555556,
+    "start_dms": {
+      "deg": 124,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 125,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 86,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Rahu",
+    "start_deg": 125.555556,
+    "end_deg": 127.555556,
+    "start_dms": {
+      "deg": 125,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 127,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 87,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Jupiter",
+    "start_deg": 127.555556,
+    "end_deg": 129.333333,
+    "start_dms": {
+      "deg": 127,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 129,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 88,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Saturn",
+    "start_deg": 129.333333,
+    "end_deg": 131.444444,
+    "start_dms": {
+      "deg": 129,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 131,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 89,
+    "nakshatra": "Magha",
+    "nakshatra_index": 10,
+    "sign": "Leo",
+    "star_lord": "Ketu",
+    "sub_lord": "Mercury",
+    "start_deg": 131.444444,
+    "end_deg": 133.333333,
+    "start_dms": {
+      "deg": 131,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 133,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 90,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Venus",
+    "start_deg": 133.333333,
+    "end_deg": 135.555556,
+    "start_dms": {
+      "deg": 133,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 135,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 91,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Sun",
+    "start_deg": 135.555556,
+    "end_deg": 136.222222,
+    "start_dms": {
+      "deg": 135,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 136,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 92,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Moon",
+    "start_deg": 136.222222,
+    "end_deg": 137.333333,
+    "start_dms": {
+      "deg": 136,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 137,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 93,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Mars",
+    "start_deg": 137.333333,
+    "end_deg": 138.111111,
+    "start_dms": {
+      "deg": 137,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 138,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 94,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Rahu",
+    "start_deg": 138.111111,
+    "end_deg": 140.111111,
+    "start_dms": {
+      "deg": 138,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 140,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 95,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Jupiter",
+    "start_deg": 140.111111,
+    "end_deg": 141.888889,
+    "start_dms": {
+      "deg": 140,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 141,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 96,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Saturn",
+    "start_deg": 141.888889,
+    "end_deg": 144.0,
+    "start_dms": {
+      "deg": 141,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 143,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 97,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Mercury",
+    "start_deg": 144.0,
+    "end_deg": 145.888889,
+    "start_dms": {
+      "deg": 143,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 145,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 98,
+    "nakshatra": "Purva Phalguni",
+    "nakshatra_index": 11,
+    "sign": "Leo",
+    "star_lord": "Venus",
+    "sub_lord": "Ketu",
+    "start_deg": 145.888889,
+    "end_deg": 146.666667,
+    "start_dms": {
+      "deg": 145,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 146,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 99,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Leo",
+    "star_lord": "Sun",
+    "sub_lord": "Sun",
+    "start_deg": 146.666667,
+    "end_deg": 147.333333,
+    "start_dms": {
+      "deg": 146,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 147,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 100,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Leo",
+    "star_lord": "Sun",
+    "sub_lord": "Moon",
+    "start_deg": 147.333333,
+    "end_deg": 148.444444,
+    "start_dms": {
+      "deg": 147,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 148,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 101,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Leo",
+    "star_lord": "Sun",
+    "sub_lord": "Mars",
+    "start_deg": 148.444444,
+    "end_deg": 149.222222,
+    "start_dms": {
+      "deg": 148,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 149,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 102,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Leo",
+    "star_lord": "Sun",
+    "sub_lord": "Rahu",
+    "start_deg": 149.222222,
+    "end_deg": 151.222222,
+    "start_dms": {
+      "deg": 149,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 151,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 103,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Virgo",
+    "star_lord": "Sun",
+    "sub_lord": "Jupiter",
+    "start_deg": 151.222222,
+    "end_deg": 153.0,
+    "start_dms": {
+      "deg": 151,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 152,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 104,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Virgo",
+    "star_lord": "Sun",
+    "sub_lord": "Saturn",
+    "start_deg": 153.0,
+    "end_deg": 155.111111,
+    "start_dms": {
+      "deg": 152,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 155,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 105,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Virgo",
+    "star_lord": "Sun",
+    "sub_lord": "Mercury",
+    "start_deg": 155.111111,
+    "end_deg": 157.0,
+    "start_dms": {
+      "deg": 155,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 156,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 106,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Virgo",
+    "star_lord": "Sun",
+    "sub_lord": "Ketu",
+    "start_deg": 157.0,
+    "end_deg": 157.777778,
+    "start_dms": {
+      "deg": 156,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 157,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 107,
+    "nakshatra": "Uttara Phalguni",
+    "nakshatra_index": 12,
+    "sign": "Virgo",
+    "star_lord": "Sun",
+    "sub_lord": "Venus",
+    "start_deg": 157.777778,
+    "end_deg": 160.0,
+    "start_dms": {
+      "deg": 157,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 159,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 108,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Moon",
+    "start_deg": 160.0,
+    "end_deg": 161.111111,
+    "start_dms": {
+      "deg": 160,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 161,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 109,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Mars",
+    "start_deg": 161.111111,
+    "end_deg": 161.888889,
+    "start_dms": {
+      "deg": 161,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 161,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 110,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Rahu",
+    "start_deg": 161.888889,
+    "end_deg": 163.888889,
+    "start_dms": {
+      "deg": 161,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 163,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 111,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Jupiter",
+    "start_deg": 163.888889,
+    "end_deg": 165.666667,
+    "start_dms": {
+      "deg": 163,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 165,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 112,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Saturn",
+    "start_deg": 165.666667,
+    "end_deg": 167.777778,
+    "start_dms": {
+      "deg": 165,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 167,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 113,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Mercury",
+    "start_deg": 167.777778,
+    "end_deg": 169.666667,
+    "start_dms": {
+      "deg": 167,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 169,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 114,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Ketu",
+    "start_deg": 169.666667,
+    "end_deg": 170.444444,
+    "start_dms": {
+      "deg": 169,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 170,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 115,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Venus",
+    "start_deg": 170.444444,
+    "end_deg": 172.666667,
+    "start_dms": {
+      "deg": 170,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 172,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 116,
+    "nakshatra": "Hasta",
+    "nakshatra_index": 13,
+    "sign": "Virgo",
+    "star_lord": "Moon",
+    "sub_lord": "Sun",
+    "start_deg": 172.666667,
+    "end_deg": 173.333333,
+    "start_dms": {
+      "deg": 172,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 173,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 117,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Virgo",
+    "star_lord": "Mars",
+    "sub_lord": "Mars",
+    "start_deg": 173.333333,
+    "end_deg": 174.111111,
+    "start_dms": {
+      "deg": 173,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 174,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 118,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Virgo",
+    "star_lord": "Mars",
+    "sub_lord": "Rahu",
+    "start_deg": 174.111111,
+    "end_deg": 176.111111,
+    "start_dms": {
+      "deg": 174,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 176,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 119,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Virgo",
+    "star_lord": "Mars",
+    "sub_lord": "Jupiter",
+    "start_deg": 176.111111,
+    "end_deg": 177.888889,
+    "start_dms": {
+      "deg": 176,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 177,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 120,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Virgo",
+    "star_lord": "Mars",
+    "sub_lord": "Saturn",
+    "start_deg": 177.888889,
+    "end_deg": 180.0,
+    "start_dms": {
+      "deg": 177,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 179,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 121,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Virgo",
+    "star_lord": "Mars",
+    "sub_lord": "Mercury",
+    "start_deg": 180.0,
+    "end_deg": 181.888889,
+    "start_dms": {
+      "deg": 179,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 181,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 122,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Libra",
+    "star_lord": "Mars",
+    "sub_lord": "Ketu",
+    "start_deg": 181.888889,
+    "end_deg": 182.666667,
+    "start_dms": {
+      "deg": 181,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 182,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 123,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Libra",
+    "star_lord": "Mars",
+    "sub_lord": "Venus",
+    "start_deg": 182.666667,
+    "end_deg": 184.888889,
+    "start_dms": {
+      "deg": 182,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 184,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 124,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Libra",
+    "star_lord": "Mars",
+    "sub_lord": "Sun",
+    "start_deg": 184.888889,
+    "end_deg": 185.555556,
+    "start_dms": {
+      "deg": 184,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 185,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 125,
+    "nakshatra": "Chitra",
+    "nakshatra_index": 14,
+    "sign": "Libra",
+    "star_lord": "Mars",
+    "sub_lord": "Moon",
+    "start_deg": 185.555556,
+    "end_deg": 186.666667,
+    "start_dms": {
+      "deg": 185,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 186,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 126,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Rahu",
+    "start_deg": 186.666667,
+    "end_deg": 188.666667,
+    "start_dms": {
+      "deg": 186,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 188,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 127,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Jupiter",
+    "start_deg": 188.666667,
+    "end_deg": 190.444444,
+    "start_dms": {
+      "deg": 188,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 190,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 128,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Saturn",
+    "start_deg": 190.444444,
+    "end_deg": 192.555556,
+    "start_dms": {
+      "deg": 190,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 192,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 129,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Mercury",
+    "start_deg": 192.555556,
+    "end_deg": 194.444444,
+    "start_dms": {
+      "deg": 192,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 194,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 130,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Ketu",
+    "start_deg": 194.444444,
+    "end_deg": 195.222222,
+    "start_dms": {
+      "deg": 194,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 195,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 131,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Venus",
+    "start_deg": 195.222222,
+    "end_deg": 197.444444,
+    "start_dms": {
+      "deg": 195,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 197,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 132,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Sun",
+    "start_deg": 197.444444,
+    "end_deg": 198.111111,
+    "start_dms": {
+      "deg": 197,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 198,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 133,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Moon",
+    "start_deg": 198.111111,
+    "end_deg": 199.222222,
+    "start_dms": {
+      "deg": 198,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 199,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 134,
+    "nakshatra": "Swati",
+    "nakshatra_index": 15,
+    "sign": "Libra",
+    "star_lord": "Rahu",
+    "sub_lord": "Mars",
+    "start_deg": 199.222222,
+    "end_deg": 200.0,
+    "start_dms": {
+      "deg": 199,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 199,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 135,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Jupiter",
+    "start_deg": 200.0,
+    "end_deg": 201.777778,
+    "start_dms": {
+      "deg": 200,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 201,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 136,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Saturn",
+    "start_deg": 201.777778,
+    "end_deg": 203.888889,
+    "start_dms": {
+      "deg": 201,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 203,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 137,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mercury",
+    "start_deg": 203.888889,
+    "end_deg": 205.777778,
+    "start_dms": {
+      "deg": 203,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 205,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 138,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Ketu",
+    "start_deg": 205.777778,
+    "end_deg": 206.555556,
+    "start_dms": {
+      "deg": 205,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 206,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 139,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Venus",
+    "start_deg": 206.555556,
+    "end_deg": 208.777778,
+    "start_dms": {
+      "deg": 206,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 208,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 140,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Sun",
+    "start_deg": 208.777778,
+    "end_deg": 209.444444,
+    "start_dms": {
+      "deg": 208,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 209,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 141,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Libra",
+    "star_lord": "Jupiter",
+    "sub_lord": "Moon",
+    "start_deg": 209.444444,
+    "end_deg": 210.555556,
+    "start_dms": {
+      "deg": 209,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 210,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 142,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Scorpio",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mars",
+    "start_deg": 210.555556,
+    "end_deg": 211.333333,
+    "start_dms": {
+      "deg": 210,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 211,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 143,
+    "nakshatra": "Vishakha",
+    "nakshatra_index": 16,
+    "sign": "Scorpio",
+    "star_lord": "Jupiter",
+    "sub_lord": "Rahu",
+    "start_deg": 211.333333,
+    "end_deg": 213.333333,
+    "start_dms": {
+      "deg": 211,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 213,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 144,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Saturn",
+    "start_deg": 213.333333,
+    "end_deg": 215.444444,
+    "start_dms": {
+      "deg": 213,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 215,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 145,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Mercury",
+    "start_deg": 215.444444,
+    "end_deg": 217.333333,
+    "start_dms": {
+      "deg": 215,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 217,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 146,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Ketu",
+    "start_deg": 217.333333,
+    "end_deg": 218.111111,
+    "start_dms": {
+      "deg": 217,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 218,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 147,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Venus",
+    "start_deg": 218.111111,
+    "end_deg": 220.333333,
+    "start_dms": {
+      "deg": 218,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 220,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 148,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Sun",
+    "start_deg": 220.333333,
+    "end_deg": 221.0,
+    "start_dms": {
+      "deg": 220,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 221,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 149,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Moon",
+    "start_deg": 221.0,
+    "end_deg": 222.111111,
+    "start_dms": {
+      "deg": 221,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 222,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 150,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Mars",
+    "start_deg": 222.111111,
+    "end_deg": 222.888889,
+    "start_dms": {
+      "deg": 222,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 222,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 151,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Rahu",
+    "start_deg": 222.888889,
+    "end_deg": 224.888889,
+    "start_dms": {
+      "deg": 222,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 224,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 152,
+    "nakshatra": "Anuradha",
+    "nakshatra_index": 17,
+    "sign": "Scorpio",
+    "star_lord": "Saturn",
+    "sub_lord": "Jupiter",
+    "start_deg": 224.888889,
+    "end_deg": 226.666667,
+    "start_dms": {
+      "deg": 224,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 226,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 153,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Mercury",
+    "start_deg": 226.666667,
+    "end_deg": 228.555556,
+    "start_dms": {
+      "deg": 226,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 228,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 154,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Ketu",
+    "start_deg": 228.555556,
+    "end_deg": 229.333333,
+    "start_dms": {
+      "deg": 228,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 229,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 155,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Venus",
+    "start_deg": 229.333333,
+    "end_deg": 231.555556,
+    "start_dms": {
+      "deg": 229,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 231,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 156,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Sun",
+    "start_deg": 231.555556,
+    "end_deg": 232.222222,
+    "start_dms": {
+      "deg": 231,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 232,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 157,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Moon",
+    "start_deg": 232.222222,
+    "end_deg": 233.333333,
+    "start_dms": {
+      "deg": 232,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 233,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 158,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Mars",
+    "start_deg": 233.333333,
+    "end_deg": 234.111111,
+    "start_dms": {
+      "deg": 233,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 234,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 159,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Rahu",
+    "start_deg": 234.111111,
+    "end_deg": 236.111111,
+    "start_dms": {
+      "deg": 234,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 236,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 160,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Jupiter",
+    "start_deg": 236.111111,
+    "end_deg": 237.888889,
+    "start_dms": {
+      "deg": 236,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 237,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 161,
+    "nakshatra": "Jyeshtha",
+    "nakshatra_index": 18,
+    "sign": "Scorpio",
+    "star_lord": "Mercury",
+    "sub_lord": "Saturn",
+    "start_deg": 237.888889,
+    "end_deg": 240.0,
+    "start_dms": {
+      "deg": 237,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 239,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 162,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Ketu",
+    "start_deg": 240.0,
+    "end_deg": 240.777778,
+    "start_dms": {
+      "deg": 240,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 240,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 163,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Venus",
+    "start_deg": 240.777778,
+    "end_deg": 243.0,
+    "start_dms": {
+      "deg": 240,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 243,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 164,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Sun",
+    "start_deg": 243.0,
+    "end_deg": 243.666667,
+    "start_dms": {
+      "deg": 243,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 243,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 165,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Moon",
+    "start_deg": 243.666667,
+    "end_deg": 244.777778,
+    "start_dms": {
+      "deg": 243,
+      "min": 39,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 244,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 166,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Mars",
+    "start_deg": 244.777778,
+    "end_deg": 245.555556,
+    "start_dms": {
+      "deg": 244,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 245,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 167,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Rahu",
+    "start_deg": 245.555556,
+    "end_deg": 247.555556,
+    "start_dms": {
+      "deg": 245,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 247,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 168,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Jupiter",
+    "start_deg": 247.555556,
+    "end_deg": 249.333333,
+    "start_dms": {
+      "deg": 247,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 249,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 169,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Saturn",
+    "start_deg": 249.333333,
+    "end_deg": 251.444444,
+    "start_dms": {
+      "deg": 249,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 251,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 170,
+    "nakshatra": "Mula",
+    "nakshatra_index": 19,
+    "sign": "Sagittarius",
+    "star_lord": "Ketu",
+    "sub_lord": "Mercury",
+    "start_deg": 251.444444,
+    "end_deg": 253.333333,
+    "start_dms": {
+      "deg": 251,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 253,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 171,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Venus",
+    "start_deg": 253.333333,
+    "end_deg": 255.555556,
+    "start_dms": {
+      "deg": 253,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 255,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 172,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Sun",
+    "start_deg": 255.555556,
+    "end_deg": 256.222222,
+    "start_dms": {
+      "deg": 255,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 256,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 173,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Moon",
+    "start_deg": 256.222222,
+    "end_deg": 257.333333,
+    "start_dms": {
+      "deg": 256,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 257,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 174,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Mars",
+    "start_deg": 257.333333,
+    "end_deg": 258.111111,
+    "start_dms": {
+      "deg": 257,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 258,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 175,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Rahu",
+    "start_deg": 258.111111,
+    "end_deg": 260.111111,
+    "start_dms": {
+      "deg": 258,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 260,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 176,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Jupiter",
+    "start_deg": 260.111111,
+    "end_deg": 261.888889,
+    "start_dms": {
+      "deg": 260,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 261,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 177,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Saturn",
+    "start_deg": 261.888889,
+    "end_deg": 264.0,
+    "start_dms": {
+      "deg": 261,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 263,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 178,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Mercury",
+    "start_deg": 264.0,
+    "end_deg": 265.888889,
+    "start_dms": {
+      "deg": 263,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 265,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 179,
+    "nakshatra": "Purva Ashadha",
+    "nakshatra_index": 20,
+    "sign": "Sagittarius",
+    "star_lord": "Venus",
+    "sub_lord": "Ketu",
+    "start_deg": 265.888889,
+    "end_deg": 266.666667,
+    "start_dms": {
+      "deg": 265,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 266,
+      "min": 39,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 180,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Sagittarius",
+    "star_lord": "Sun",
+    "sub_lord": "Sun",
+    "start_deg": 266.666667,
+    "end_deg": 267.333333,
+    "start_dms": {
+      "deg": 266,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 267,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 181,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Sagittarius",
+    "star_lord": "Sun",
+    "sub_lord": "Moon",
+    "start_deg": 267.333333,
+    "end_deg": 268.444444,
+    "start_dms": {
+      "deg": 267,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 268,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 182,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Sagittarius",
+    "star_lord": "Sun",
+    "sub_lord": "Mars",
+    "start_deg": 268.444444,
+    "end_deg": 269.222222,
+    "start_dms": {
+      "deg": 268,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 269,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 183,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Sagittarius",
+    "star_lord": "Sun",
+    "sub_lord": "Rahu",
+    "start_deg": 269.222222,
+    "end_deg": 271.222222,
+    "start_dms": {
+      "deg": 269,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 271,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 184,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Capricorn",
+    "star_lord": "Sun",
+    "sub_lord": "Jupiter",
+    "start_deg": 271.222222,
+    "end_deg": 273.0,
+    "start_dms": {
+      "deg": 271,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 272,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 185,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Capricorn",
+    "star_lord": "Sun",
+    "sub_lord": "Saturn",
+    "start_deg": 273.0,
+    "end_deg": 275.111111,
+    "start_dms": {
+      "deg": 272,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 275,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 186,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Capricorn",
+    "star_lord": "Sun",
+    "sub_lord": "Mercury",
+    "start_deg": 275.111111,
+    "end_deg": 277.0,
+    "start_dms": {
+      "deg": 275,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 276,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 187,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Capricorn",
+    "star_lord": "Sun",
+    "sub_lord": "Ketu",
+    "start_deg": 277.0,
+    "end_deg": 277.777778,
+    "start_dms": {
+      "deg": 276,
+      "min": 59,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 277,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 188,
+    "nakshatra": "Uttara Ashadha",
+    "nakshatra_index": 21,
+    "sign": "Capricorn",
+    "star_lord": "Sun",
+    "sub_lord": "Venus",
+    "start_deg": 277.777778,
+    "end_deg": 280.0,
+    "start_dms": {
+      "deg": 277,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 279,
+      "min": 59,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 189,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Moon",
+    "start_deg": 280.0,
+    "end_deg": 281.111111,
+    "start_dms": {
+      "deg": 280,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 281,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 190,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Mars",
+    "start_deg": 281.111111,
+    "end_deg": 281.888889,
+    "start_dms": {
+      "deg": 281,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 281,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 191,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Rahu",
+    "start_deg": 281.888889,
+    "end_deg": 283.888889,
+    "start_dms": {
+      "deg": 281,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 283,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 192,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Jupiter",
+    "start_deg": 283.888889,
+    "end_deg": 285.666667,
+    "start_dms": {
+      "deg": 283,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 285,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 193,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Saturn",
+    "start_deg": 285.666667,
+    "end_deg": 287.777778,
+    "start_dms": {
+      "deg": 285,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 287,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 194,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Mercury",
+    "start_deg": 287.777778,
+    "end_deg": 289.666667,
+    "start_dms": {
+      "deg": 287,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 289,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 195,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Ketu",
+    "start_deg": 289.666667,
+    "end_deg": 290.444444,
+    "start_dms": {
+      "deg": 289,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 290,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 196,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Venus",
+    "start_deg": 290.444444,
+    "end_deg": 292.666667,
+    "start_dms": {
+      "deg": 290,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 292,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 197,
+    "nakshatra": "Shravana",
+    "nakshatra_index": 22,
+    "sign": "Capricorn",
+    "star_lord": "Moon",
+    "sub_lord": "Sun",
+    "start_deg": 292.666667,
+    "end_deg": 293.333333,
+    "start_dms": {
+      "deg": 292,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 293,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 198,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Capricorn",
+    "star_lord": "Mars",
+    "sub_lord": "Mars",
+    "start_deg": 293.333333,
+    "end_deg": 294.111111,
+    "start_dms": {
+      "deg": 293,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 294,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 199,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Capricorn",
+    "star_lord": "Mars",
+    "sub_lord": "Rahu",
+    "start_deg": 294.111111,
+    "end_deg": 296.111111,
+    "start_dms": {
+      "deg": 294,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 296,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 200,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Capricorn",
+    "star_lord": "Mars",
+    "sub_lord": "Jupiter",
+    "start_deg": 296.111111,
+    "end_deg": 297.888889,
+    "start_dms": {
+      "deg": 296,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 297,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 201,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Capricorn",
+    "star_lord": "Mars",
+    "sub_lord": "Saturn",
+    "start_deg": 297.888889,
+    "end_deg": 300.0,
+    "start_dms": {
+      "deg": 297,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 300,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 202,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Aquarius",
+    "star_lord": "Mars",
+    "sub_lord": "Mercury",
+    "start_deg": 300.0,
+    "end_deg": 301.888889,
+    "start_dms": {
+      "deg": 300,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 301,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 203,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Aquarius",
+    "star_lord": "Mars",
+    "sub_lord": "Ketu",
+    "start_deg": 301.888889,
+    "end_deg": 302.666667,
+    "start_dms": {
+      "deg": 301,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 302,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 204,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Aquarius",
+    "star_lord": "Mars",
+    "sub_lord": "Venus",
+    "start_deg": 302.666667,
+    "end_deg": 304.888889,
+    "start_dms": {
+      "deg": 302,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 304,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 205,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Aquarius",
+    "star_lord": "Mars",
+    "sub_lord": "Sun",
+    "start_deg": 304.888889,
+    "end_deg": 305.555556,
+    "start_dms": {
+      "deg": 304,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 305,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 206,
+    "nakshatra": "Dhanishta",
+    "nakshatra_index": 23,
+    "sign": "Aquarius",
+    "star_lord": "Mars",
+    "sub_lord": "Moon",
+    "start_deg": 305.555556,
+    "end_deg": 306.666667,
+    "start_dms": {
+      "deg": 305,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 306,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 207,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Rahu",
+    "start_deg": 306.666667,
+    "end_deg": 308.666667,
+    "start_dms": {
+      "deg": 306,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 308,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 208,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Jupiter",
+    "start_deg": 308.666667,
+    "end_deg": 310.444444,
+    "start_dms": {
+      "deg": 308,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 310,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 209,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Saturn",
+    "start_deg": 310.444444,
+    "end_deg": 312.555556,
+    "start_dms": {
+      "deg": 310,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 312,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 210,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Mercury",
+    "start_deg": 312.555556,
+    "end_deg": 314.444444,
+    "start_dms": {
+      "deg": 312,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 314,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 211,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Ketu",
+    "start_deg": 314.444444,
+    "end_deg": 315.222222,
+    "start_dms": {
+      "deg": 314,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 315,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 212,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Venus",
+    "start_deg": 315.222222,
+    "end_deg": 317.444444,
+    "start_dms": {
+      "deg": 315,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 317,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 213,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Sun",
+    "start_deg": 317.444444,
+    "end_deg": 318.111111,
+    "start_dms": {
+      "deg": 317,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 318,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 214,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Moon",
+    "start_deg": 318.111111,
+    "end_deg": 319.222222,
+    "start_dms": {
+      "deg": 318,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 319,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 215,
+    "nakshatra": "Shatabhisha",
+    "nakshatra_index": 24,
+    "sign": "Aquarius",
+    "star_lord": "Rahu",
+    "sub_lord": "Mars",
+    "start_deg": 319.222222,
+    "end_deg": 320.0,
+    "start_dms": {
+      "deg": 319,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 320,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 216,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Jupiter",
+    "start_deg": 320.0,
+    "end_deg": 321.777778,
+    "start_dms": {
+      "deg": 320,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 321,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 217,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Saturn",
+    "start_deg": 321.777778,
+    "end_deg": 323.888889,
+    "start_dms": {
+      "deg": 321,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 323,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 218,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mercury",
+    "start_deg": 323.888889,
+    "end_deg": 325.777778,
+    "start_dms": {
+      "deg": 323,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 325,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 219,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Ketu",
+    "start_deg": 325.777778,
+    "end_deg": 326.555556,
+    "start_dms": {
+      "deg": 325,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 326,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 220,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Venus",
+    "start_deg": 326.555556,
+    "end_deg": 328.777778,
+    "start_dms": {
+      "deg": 326,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 328,
+      "min": 46,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 221,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Sun",
+    "start_deg": 328.777778,
+    "end_deg": 329.444444,
+    "start_dms": {
+      "deg": 328,
+      "min": 46,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 329,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 222,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Aquarius",
+    "star_lord": "Jupiter",
+    "sub_lord": "Moon",
+    "start_deg": 329.444444,
+    "end_deg": 330.555556,
+    "start_dms": {
+      "deg": 329,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 330,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 223,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Pisces",
+    "star_lord": "Jupiter",
+    "sub_lord": "Mars",
+    "start_deg": 330.555556,
+    "end_deg": 331.333333,
+    "start_dms": {
+      "deg": 330,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 331,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 224,
+    "nakshatra": "Purva Bhadrapada",
+    "nakshatra_index": 25,
+    "sign": "Pisces",
+    "star_lord": "Jupiter",
+    "sub_lord": "Rahu",
+    "start_deg": 331.333333,
+    "end_deg": 333.333333,
+    "start_dms": {
+      "deg": 331,
+      "min": 20,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 333,
+      "min": 20,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 225,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Saturn",
+    "start_deg": 333.333333,
+    "end_deg": 335.444444,
+    "start_dms": {
+      "deg": 333,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 335,
+      "min": 26,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 226,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Mercury",
+    "start_deg": 335.444444,
+    "end_deg": 337.333333,
+    "start_dms": {
+      "deg": 335,
+      "min": 26,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 337,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 227,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Ketu",
+    "start_deg": 337.333333,
+    "end_deg": 338.111111,
+    "start_dms": {
+      "deg": 337,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 338,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 228,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Venus",
+    "start_deg": 338.111111,
+    "end_deg": 340.333333,
+    "start_dms": {
+      "deg": 338,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 340,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 229,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Sun",
+    "start_deg": 340.333333,
+    "end_deg": 341.0,
+    "start_dms": {
+      "deg": 340,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 341,
+      "min": 0,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 230,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Moon",
+    "start_deg": 341.0,
+    "end_deg": 342.111111,
+    "start_dms": {
+      "deg": 341,
+      "min": 0,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 342,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 231,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Mars",
+    "start_deg": 342.111111,
+    "end_deg": 342.888889,
+    "start_dms": {
+      "deg": 342,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 342,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 232,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Rahu",
+    "start_deg": 342.888889,
+    "end_deg": 344.888889,
+    "start_dms": {
+      "deg": 342,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 344,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 233,
+    "nakshatra": "Uttara Bhadrapada",
+    "nakshatra_index": 26,
+    "sign": "Pisces",
+    "star_lord": "Saturn",
+    "sub_lord": "Jupiter",
+    "start_deg": 344.888889,
+    "end_deg": 346.666667,
+    "start_dms": {
+      "deg": 344,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 346,
+      "min": 40,
+      "sec": 0.0
+    }
+  },
+  {
+    "id": 234,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Mercury",
+    "start_deg": 346.666667,
+    "end_deg": 348.555556,
+    "start_dms": {
+      "deg": 346,
+      "min": 40,
+      "sec": 0.0
+    },
+    "end_dms": {
+      "deg": 348,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 235,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Ketu",
+    "start_deg": 348.555556,
+    "end_deg": 349.333333,
+    "start_dms": {
+      "deg": 348,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 349,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 236,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Venus",
+    "start_deg": 349.333333,
+    "end_deg": 351.555556,
+    "start_dms": {
+      "deg": 349,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 351,
+      "min": 33,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 237,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Sun",
+    "start_deg": 351.555556,
+    "end_deg": 352.222222,
+    "start_dms": {
+      "deg": 351,
+      "min": 33,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 352,
+      "min": 13,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 238,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Moon",
+    "start_deg": 352.222222,
+    "end_deg": 353.333333,
+    "start_dms": {
+      "deg": 352,
+      "min": 13,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 353,
+      "min": 19,
+      "sec": 60.0
+    }
+  },
+  {
+    "id": 239,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Mars",
+    "start_deg": 353.333333,
+    "end_deg": 354.111111,
+    "start_dms": {
+      "deg": 353,
+      "min": 19,
+      "sec": 60.0
+    },
+    "end_dms": {
+      "deg": 354,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 240,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Rahu",
+    "start_deg": 354.111111,
+    "end_deg": 356.111111,
+    "start_dms": {
+      "deg": 354,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 356,
+      "min": 6,
+      "sec": 40.0
+    }
+  },
+  {
+    "id": 241,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Jupiter",
+    "start_deg": 356.111111,
+    "end_deg": 357.888889,
+    "start_dms": {
+      "deg": 356,
+      "min": 6,
+      "sec": 40.0
+    },
+    "end_dms": {
+      "deg": 357,
+      "min": 53,
+      "sec": 20.0
+    }
+  },
+  {
+    "id": 242,
+    "nakshatra": "Revati",
+    "nakshatra_index": 27,
+    "sign": "Pisces",
+    "star_lord": "Mercury",
+    "sub_lord": "Saturn",
+    "start_deg": 357.888889,
+    "end_deg": 360.0,
+    "start_dms": {
+      "deg": 357,
+      "min": 53,
+      "sec": 20.0
+    },
+    "end_dms": {
+      "deg": 360,
+      "min": 0,
+      "sec": 0.0
+    }
+  }
+]
