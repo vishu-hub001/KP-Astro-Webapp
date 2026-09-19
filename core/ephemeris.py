@@ -23,6 +23,7 @@ from datetime import datetime, timezone, timedelta
 from typing import Dict, List
 
 import swisseph as swe
+from contextvars import ContextVar
 
 import config
 
@@ -83,11 +84,20 @@ class ChartPositions:
         }
 
 
+# Per-request ayanamsa override (set by middleware in main.py from the
+# X-Ayanamsa header). Falls back to config.AYANAMSA_MODE when unset.
+current_ayanamsa: ContextVar = ContextVar("current_ayanamsa", default=None)
+SUPPORTED_AYANAMSAS = ("KRISHNAMURTI", "LAHIRI")
+
+
 def _set_ayanamsa():
-    """Configure Swiss Ephemeris to use the Krishnamurti (KP) Ayanamsa."""
-    mode = getattr(swe, f"SIDM_{config.AYANAMSA_MODE}", None)
+    """Configure Swiss Ephemeris to use the selected ayanamsa (KP by default)."""
+    name = (current_ayanamsa.get() or config.AYANAMSA_MODE).upper()
+    if name not in SUPPORTED_AYANAMSAS:
+        name = config.AYANAMSA_MODE
+    mode = getattr(swe, f"SIDM_{name}", None)
     if mode is None:
-        raise ValueError(f"Unknown ayanamsa mode in config: {config.AYANAMSA_MODE}")
+        raise ValueError(f"Unknown ayanamsa mode: {name}")
     swe.set_sid_mode(mode)
 
 

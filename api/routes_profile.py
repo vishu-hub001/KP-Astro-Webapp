@@ -20,6 +20,7 @@ product, swap this for a real database; the route contracts above
 shouldn't need to change.
 """
 import json
+import shutil
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -27,11 +28,27 @@ from pathlib import Path
 from fastapi import APIRouter, HTTPException
 
 import config
+from models.birth_data import BirthData
 from models.profile import Profile, ProfileCreate
 
 router = APIRouter()
 
-_STORE_PATH = Path(config.PROFILES_STORE)
+def _resolve_store_path() -> Path:
+    """Use the Google Drive folder if it can be created/written; otherwise
+    fall back to the local data/ file. On first use, existing local
+    profiles are copied across so nothing is lost."""
+    path = Path(config.PROFILES_STORE)
+    legacy = Path(config.LEGACY_PROFILES_STORE)
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        if not path.exists() and legacy.exists() and path != legacy:
+            shutil.copyfile(legacy, path)
+        return path
+    except OSError:
+        return legacy
+
+
+_STORE_PATH = _resolve_store_path()
 
 
 def _load_profiles() -> list[dict]:
@@ -53,8 +70,11 @@ def _save_profiles(profiles: list[dict]) -> None:
     directory first if it doesn't exist yet.
     """
     _STORE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(_STORE_PATH, "w", encoding="utf-8") as f:
+    # Write to a temp file then swap it in, so Drive never syncs a half-written file.
+    tmp = _STORE_PATH.with_suffix(".tmp")
+    with open(tmp, "w", encoding="utf-8") as f:
         json.dump(profiles, f, indent=2)
+    tmp.replace(_STORE_PATH)
 
 
 @router.get("/")
@@ -63,6 +83,51 @@ def list_profiles():
     profiles = _load_profiles()
     profiles.sort(key=lambda p: p["created_at"], reverse=True)
     return {"status": "ok", "count": len(profiles), "profiles": profiles}
+
+
+@router.post("/import")
+def import_profiles(payload: dict):
+    """
+    Merge profiles from an exported JSON file. Accepts either a bare list
+    of profiles or {"profiles": [...]}. Profiles whose id already exists,
+    or that duplicate an existing name + birth data, are skipped.
+    """
+    incoming = payload.get("profiles") if isinstance(payload, dict) else None
+    if not isinstance(incoming, list):
+        raise HTTPException(status_code=400, detail="Expected a JSON object with a 'profiles' list.")
+
+    existing = _load_profiles()
+    seen_ids = {p["id"] for p in existing}
+
+    def sig(p):
+        b = p["birth_data"]
+        return (p["name"].strip().lower(), b["date"], b["time"], round(b["latitude"], 4), round(b["longitude"], 4))
+
+    seen_sigs = {sig(p) for p in existing}
+    added, skipped, invalid = 0, 0, 0
+    for raw in incoming:
+        try:
+            birth = BirthData(**raw["birth_data"])
+            prof = Profile(
+                id=str(raw.get("id") or uuid.uuid4()),
+                name=str(raw["name"]).strip() or "Imported",
+                birth_data=birth,
+                created_at=str(raw.get("created_at") or datetime.now(timezone.utc).isoformat()),
+            ).model_dump()
+        except Exception:
+            invalid += 1
+            continue
+        if prof["id"] in seen_ids or sig(prof) in seen_sigs:
+            skipped += 1
+            continue
+        existing.append(prof)
+        seen_ids.add(prof["id"])
+        seen_sigs.add(sig(prof))
+        added += 1
+
+    if added:
+        _save_profiles(existing)
+    return {"status": "ok", "added": added, "skipped": skipped, "invalid": invalid}
 
 
 @router.get("/{profile_id}")

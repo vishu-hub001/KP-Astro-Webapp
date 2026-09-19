@@ -1,9 +1,11 @@
 // sections/chart.js -- North Indian diamond-grid chart + planet/cusp tables.
-import { getChart, getName } from "../state.js";
+import { getChart, getName, getSignificators } from "../state.js";
 import {
   degToSign, PLANET_ABBR, houseOfLongitude, isCombust,
-  SIGN_LORDS, SIGN_ELEMENT, SIGN_QUALITY, ELEMENT_COLOR, QUALITY_COLOR, SIGNS,
+  SIGN_LORDS, SIGN_QUALITY, QUALITY_COLOR, SIGNS,
+  PLANET_TATVA, TATVA_COLOR, getDignity, DIGNITY_COLOR,
 } from "../helpers.js";
+import { pbadge, dignityTag, chip, HOUSE_INFO } from "../ui.js";
 
 // Classic North Indian house layout on a 4x4 grid (row,col), house 1
 // always top-center, running clockwise. The middle 2x2 block is the
@@ -29,6 +31,7 @@ export function render(container) {
   const byHouse = {};
   for (let h = 1; h <= 12; h++) byHouse[h] = [];
   planets.forEach(p => byHouse[houseOfLongitude(p.longitude, cusps)].push(p));
+  const byName = Object.fromEntries(planets.map(p => [p.name, p]));
 
   const sun = planets.find(p => p.name === "Sun");
   const sunLon = sun ? sun.longitude : null;
@@ -73,6 +76,7 @@ export function render(container) {
   }
 
   const name = getName() || "Chart";
+  const sig = getSignificators();
 
   // Center box shows the birth summary by default; clicking any house
   // cell swaps it to that house's Rasi/Star/Sub lord detail, and
@@ -85,18 +89,28 @@ export function render(container) {
 
   const houseCenterHtml = (h) => {
     const info = houseInfo[h];
-    const plList = info.planets.length
-      ? info.planets.map(p => PLANET_ABBR[p.name] || p.name.slice(0,2)).join(", ")
-      : "None";
+    const pillFor = (name) => {
+      const p = byName[name];
+      const isCmb = p ? combustSet.has(name) : false;
+      const flags = p ? `${p.is_retrograde ? '<sup class="flag-r">R</sup>' : ''}${isCmb ? '<sup class="flag-c">C</sup>' : ''}` : '';
+      return `<span class="pill">${PLANET_ABBR[name] || name}${flags}</span>`;
+    };
+    const plHtml = info.planets.length
+      ? info.planets.map(p => pillFor(p.name)).join("")
+      : `<span class="dv">None</span>`;
+    const sigList = sig ? (sig[h]?.all || []) : [];
+    const sigHtml = sigList.length
+      ? sigList.map(n => `<span class="pill">${PLANET_ABBR[n] || n}</span>`).join("")
+      : `<span class="dv">${sig ? "None" : "Not computed"}</span>`;
     return `
-      <div class="nm">House ${h} · ${info.sign}</div>
+      <div class="nm">House ${h} <span class="ni-sub-sign">· ${info.sign}</span></div>
       <div class="ni-detail">
-        <div><span class="dl">Sign Lord</span><span class="dv">${info.rasiLord}</span></div>
         <div><span class="dl">Star Lord</span><span class="dv">${info.starLord}</span></div>
         <div><span class="dl">Sub Lord</span><span class="dv">${info.subLord}</span></div>
-      </div>
-      <div class="dt">${info.nakshatra} · pada ${info.pada}</div>
-      <div class="lg">Planets <span class="pl-list">${plList}</span></div>`;
+        <div><span class="dl">Nakshatra</span><span class="dv">${info.nakshatra} · pada ${info.pada}</span></div>
+        <div class="ni-row-pills"><span class="dl">Planets</span><span class="dv ni-pill-value">${plHtml}</span></div>
+        <div class="ni-row-pills"><span class="dl">Significators</span><span class="dv ni-pill-value">${sigHtml}</span></div>
+      </div>`;
   };
 
   const chartHtml = `
@@ -110,17 +124,20 @@ export function render(container) {
   const planetRows = planets.map(p => {
     const sd = degToSign(p.longitude);
     const isCmb = combustSet.has(p.name);
+    const dignity = getDignity(p.name, p.longitude);
     return `<tr>
-      <td>${PLANET_ABBR[p.name] || ''} ${p.name}${p.is_retrograde ? '<span class="retro-flag">R</span>' : ''}${isCmb ? '<span class="combust-flag">C</span>' : ''}</td>
+      <td class="sticky-col"><span class="tcell-name">${pbadge(p.name)}<span>${p.name}${p.is_retrograde ? '<span class="retro-flag">R</span>' : ''}${isCmb ? '<span class="combust-flag">C</span>' : ''}</span></span></td>
       <td class="mono">${sd.text}</td>
-      <td>${houseOfLongitude(p.longitude, cusps)}</td>
+      <td><span class="pill">H${houseOfLongitude(p.longitude, cusps)}</span></td>
       <td class="mono">${p.speed.toFixed(3)}°/d</td>
+      <td>${dignityTag(dignity)}</td>
     </tr>`;
   }).join("");
 
   const cuspRows = Object.keys(cusps).sort((a,b)=>a-b).map(h => {
     const sd = degToSign(cusps[h].longitude);
-    return `<tr><td>${h}</td><td>${sd.sign}</td><td class="mono">${sd.text}</td></tr>`;
+    const info = HOUSE_INFO[h] || {};
+    return `<tr><td class="sticky-col"><b class="tbl-h">${h}</b> <span class="sub">${info.name || ''}</span></td><td>${sd.sign}</td><td class="mono">${sd.text}</td><td><span class="pill">${cusps[h].kp.star_lord}</span></td><td><span class="pill gold">${cusps[h].kp.sub_lord}</span></td></tr>`;
   }).join("");
 
   // ---------- instant analysis: everything below is derived purely from
@@ -134,14 +151,18 @@ export function render(container) {
   const vacantHouses = Object.values(houseCounts).filter(c => c === 0).length;
   const maxHouse = Object.entries(houseCounts).reduce((a, b) => b[1] > a[1] ? b : a, ["1", 0]);
 
-  const elemTally = { Fire: 0, Earth: 0, Air: 0, Water: 0 };
+  const elemTally = { Fire: 0, Earth: 0, Water: 0, Air: 0, Ether: 0 };
   const qualTally = { Cardinal: 0, Fixed: 0, Mutable: 0 };
+  const dignityTally = { "Exalted": 0, "Moolatrikona": 0, "Own Sign": 0, "Friendly Sign": 0, "Neutral Sign": 0, "Enemy Sign": 0, "Debilitated": 0 };
   planets.forEach(p => {
     const sign = degToSign(p.longitude).sign;
-    elemTally[SIGN_ELEMENT[sign]] = (elemTally[SIGN_ELEMENT[sign]] || 0) + 1;
+    elemTally[PLANET_TATVA[p.name]] = (elemTally[PLANET_TATVA[p.name]] || 0) + 1;
     qualTally[SIGN_QUALITY[sign]] = (qualTally[SIGN_QUALITY[sign]] || 0) + 1;
+    dignityTally[getDignity(p.name, p.longitude)]++;
   });
   const total = planets.length || 1;
+  const exaltedCount = dignityTally["Exalted"];
+  const debilitatedCount = dignityTally["Debilitated"];
 
   const barGroup = (tally, colorMap) => Object.entries(tally).map(([label, n]) => `
     <div class="bar-row">
@@ -160,11 +181,13 @@ export function render(container) {
 
   const chipRow = `
     <div class="chip-row">
-      <div class="chip"><span class="chip-n">${retroList.length}</span><span class="chip-l">Retrograde</span></div>
-      <div class="chip${combustList.length ? ' warn' : ''}"><span class="chip-n">${combustList.length}</span><span class="chip-l">Combust</span></div>
-      <div class="chip${ownSignList.length ? ' good' : ''}"><span class="chip-n">${ownSignList.length}</span><span class="chip-l">In own sign</span></div>
-      <div class="chip"><span class="chip-n">${vacantHouses}</span><span class="chip-l">Vacant houses</span></div>
-      <div class="chip"><span class="chip-n">H${maxHouse[0]}</span><span class="chip-l">Most occupied (${maxHouse[1]})</span></div>
+      ${chip(retroList.length, "Retrograde")}
+      ${chip(combustList.length, "Combust", combustList.length ? "warn" : "")}
+      ${chip(ownSignList.length, "In own sign", ownSignList.length ? "good" : "")}
+      ${chip(exaltedCount, "Exalted", exaltedCount ? "good" : "")}
+      ${chip(debilitatedCount, "Debilitated", debilitatedCount ? "warn" : "")}
+      ${chip(vacantHouses, "Vacant houses")}
+      ${chip("H" + maxHouse[0], "Most occupied (" + maxHouse[1] + ")")}
     </div>`;
 
   const instantAnalysisHtml = `
@@ -177,12 +200,16 @@ export function render(container) {
           <div class="hocc-strip">${houseStrip}</div>
         </div>
         <div class="ia-col">
-          <div class="ia-subhead">Element balance</div>
-          ${barGroup(elemTally, ELEMENT_COLOR)}
+          <div class="ia-subhead">Element balance (Panchatattva)</div>
+          ${barGroup(elemTally, TATVA_COLOR)}
         </div>
         <div class="ia-col">
           <div class="ia-subhead">Quality balance</div>
           ${barGroup(qualTally, QUALITY_COLOR)}
+        </div>
+        <div class="ia-col">
+          <div class="ia-subhead">Dignity balance</div>
+          ${barGroup(Object.fromEntries(Object.entries(dignityTally).filter(([,n]) => n > 0)), DIGNITY_COLOR)}
         </div>
       </div>
     </div>`;
@@ -202,14 +229,19 @@ export function render(container) {
     </div>
     <div class="analysis-grid">
       <div class="panel"><h3><span class="mk">◆</span>Planets</h3>
-        <table><thead><tr><th>Planet</th><th>Position</th><th>House</th><th>Speed</th></tr></thead>
-        <tbody>${planetRows}</tbody></table>
+        <div class="tbl-scroll"><table class="wide-table">
+          <thead><tr><th class="sticky-col">Planet</th><th>Position</th><th>House</th><th>Speed</th><th>Dignity</th></tr></thead>
+          <tbody>${planetRows}</tbody>
+        </table></div>
       </div>
       <div class="panel"><h3><span class="mk">◆</span>House cusps</h3>
-        <table><thead><tr><th>House</th><th>Sign</th><th>Cusp</th></tr></thead>
-        <tbody>${cuspRows}</tbody></table>
+        <div class="tbl-scroll"><table class="wide-table">
+          <thead><tr><th class="sticky-col">House</th><th>Sign</th><th>Cusp</th><th>Star lord</th><th>Sub lord</th></tr></thead>
+          <tbody>${cuspRows}</tbody>
+        </table></div>
       </div>
     </div>
+    <p class="sub an-note">Dignity is judged sign-by-sign (exaltation, own sign, moolatrikona, friendly, neutral, enemy, debilitation) — a quick read on how comfortably each planet sits, before the KP sub-lord chain decides what it actually delivers.</p>
   `;
 
   // Wire up house-click interactivity: clicking a house cell swaps the

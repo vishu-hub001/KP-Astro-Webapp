@@ -1,4 +1,4 @@
-"""GET /dasha - Vimshottari Dasha/Bhukti/Antara periods."""
+"""GET /dasha - Vimshottari Dasha periods, from Mahadasha down to Prana Dasha."""
 from fastapi import APIRouter, HTTPException, Query
 
 from core.ephemeris import get_planet_positions
@@ -12,7 +12,8 @@ def _serialize_period(period: dict) -> dict:
     """
     Convert one dasha period dict (as produced by dasha.vimshottari) into
     a JSON-safe dict -- mainly turning its datetime start/end into ISO
-    strings, and recursing into nested "bhuktis"/"antaras" if present.
+    strings, and recursing into any nested child-period lists ("bhuktis"
+    / "antaras" / "sookshmas" / "pranas") if present.
     """
     serialized = {
         "lord": period["lord"],
@@ -20,10 +21,9 @@ def _serialize_period(period: dict) -> dict:
         "end_date": period["end_date"].isoformat(),
         "duration_years": round(period["duration_years"], 6),
     }
-    if "bhuktis" in period:
-        serialized["bhuktis"] = [_serialize_period(b) for b in period["bhuktis"]]
-    if "antaras" in period:
-        serialized["antaras"] = [_serialize_period(a) for a in period["antaras"]]
+    for key in ("bhuktis", "antaras", "sookshmas", "pranas"):
+        if key in period:
+            serialized[key] = [_serialize_period(p) for p in period[key]]
     return serialized
 
 
@@ -35,8 +35,13 @@ def get_dasha(
     latitude: float = Query(..., ge=-90, le=90, description="Birthplace latitude, decimal degrees"),
     longitude: float = Query(..., ge=-180, le=180, description="Birthplace longitude, decimal degrees"),
     levels: int = Query(
-        3, ge=1, le=3,
-        description="Depth to compute: 1=Mahadasha only, 2=+Antardasha (Bhukti), 3=+Pratyantardasha (Antara)",
+        3, ge=1, le=5,
+        description=(
+            "Depth to compute: 1=Mahadasha only, 2=+Antardasha (Bhukti), "
+            "3=+Pratyantardasha (Antara), 4=+Sookshma Dasha, 5=+Prana Dasha. "
+            "Each level multiplies the response size by ~9x, so request only "
+            "the depth you need."
+        ),
     ),
     num_cycles: int = Query(
         1, ge=1, le=2,
@@ -44,8 +49,9 @@ def get_dasha(
     ),
 ):
     """
-    Compute the Vimshottari Mahadasha/Bhukti/Antara period tree for the
-    given birth details, starting from the natal Moon's nakshatra.
+    Compute the Vimshottari Mahadasha/Antardasha/Pratyantardasha/Sookshma
+    Dasha/Prana Dasha period tree for the given birth details, starting
+    from the natal Moon's nakshatra.
     """
     data = BirthData(
         date=date, time=time, tz_offset_hours=tz_offset_hours,

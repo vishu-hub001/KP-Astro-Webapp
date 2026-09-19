@@ -9,6 +9,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from core.ephemeris import current_ayanamsa, SUPPORTED_AYANAMSAS
 from api import (
     routes_chart,
     routes_significators,
@@ -30,6 +31,29 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+
+class AyanamsaMiddleware:
+    """Pure-ASGI middleware: reads X-Ayanamsa (KRISHNAMURTI | LAHIRI) into a
+    context variable so every calculation in the request uses it."""
+
+    def __init__(self, app):
+        self.app = app
+
+    async def __call__(self, scope, receive, send):
+        if scope["type"] == "http":
+            value = dict(scope["headers"]).get(b"x-ayanamsa", b"").decode().strip().upper()
+            token = current_ayanamsa.set(value if value in SUPPORTED_AYANAMSAS else None)
+            try:
+                await self.app(scope, receive, send)
+            finally:
+                current_ayanamsa.reset(token)
+        else:
+            await self.app(scope, receive, send)
+
+
+app.add_middleware(AyanamsaMiddleware)
 
 app.include_router(routes_chart.router, prefix="/chart", tags=["Chart"])
 app.include_router(routes_significators.router, prefix="/significators", tags=["Significators"])

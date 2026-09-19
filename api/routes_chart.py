@@ -15,7 +15,7 @@ def _pada(degree_in_nakshatra: dict) -> int:
     spans 13deg20', so each pada spans 3deg20' (200 minutes of arc).
     """
     total_deg = degree_in_nakshatra["deg"] + degree_in_nakshatra["min"] / 60 + degree_in_nakshatra["sec"] / 3600
-    return min(4, int(total_deg // (200 / 60 / 3)) + 1)
+    return min(4, int(total_deg // (200 / 60)) + 1)
 
 
 def _kp_info(longitude: float) -> dict:

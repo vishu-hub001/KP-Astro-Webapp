@@ -3,7 +3,49 @@ import { callApi } from "../api.js";
 import { setName, setBirth, setCityLabel } from "../state.js";
 
 export function render(container) {
-  container.innerHTML = `<div id="pf-list" style="max-width:680px;"><div class="empty-box">Loading…</div></div>`;
+  container.innerHTML = `
+    <div style="max-width:680px;">
+      <div class="pf-tools" style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-bottom:12px;">
+        <button class="sb-btn" id="pf-export" style="flex:none; padding:8px 16px;">Export</button>
+        <button class="sb-btn" id="pf-import" style="flex:none; padding:8px 16px;">Import</button>
+        <input type="file" id="pf-file" accept="application/json,.json" style="display:none;">
+        <span class="sub" id="pf-status"></span>
+      </div>
+      <div id="pf-list"><div class="empty-box">Loading…</div></div>
+    </div>`;
+  const status = document.getElementById("pf-status");
+  const say = (msg) => { status.textContent = msg; };
+
+  document.getElementById("pf-export").addEventListener("click", async () => {
+    try {
+      const data = await callApi("/profile/");
+      if (!data.profiles.length) { say("Nothing to export yet."); return; }
+      const blob = new Blob([JSON.stringify({ app: "Sthira KP Astro", version: 1, exported_at: new Date().toISOString(), profiles: data.profiles }, null, 2)], { type: "application/json" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `kp_profiles_${new Date().toISOString().slice(0, 10)}.json`;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+      say(`Exported ${data.profiles.length} profile${data.profiles.length === 1 ? "" : "s"} ✓`);
+    } catch (err) { say(err.message); }
+  });
+
+  const fileInput = document.getElementById("pf-file");
+  document.getElementById("pf-import").addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", async () => {
+    const file = fileInput.files[0];
+    fileInput.value = "";
+    if (!file) return;
+    try {
+      const parsed = JSON.parse(await file.text());
+      const profiles = Array.isArray(parsed) ? parsed : parsed.profiles;
+      const res = await callApi("/profile/import", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ profiles }) });
+      say(`Imported ${res.added}, skipped ${res.skipped} duplicate${res.skipped === 1 ? "" : "s"}${res.invalid ? `, ${res.invalid} invalid` : ""}.`);
+      load();
+      window.dispatchEvent(new CustomEvent("profiles-changed"));
+    } catch (err) { say("Import failed: " + (err instanceof SyntaxError ? "not a valid JSON file" : err.message)); }
+  });
+
   load();
 }
 

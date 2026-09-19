@@ -3,9 +3,9 @@ dasha/vimshottari.py
 
 Vimshottari Dasha -- the primary predictive timing system in Vedic/KP
 astrology. Computes the nested Mahadasha (Dasha) -> Antardasha (Bhukti)
--> Pratyantardasha (Antara) period tree from a natal Moon position, per
-api/routes_dasha.py's stated scope ("Vimshottari Dasha/Bhukti/Antara
-periods").
+-> Pratyantardasha (Antara) -> Sookshma Dasha -> Prana Dasha period tree
+from a natal Moon position, per api/routes_dasha.py's stated scope
+("Vimshottari Dasha down to Prana Dasha").
 
 NOTE ON SCOPE: no separate build spec exists for this file. The
 mechanics implemented here are standard Vimshottari:
@@ -142,6 +142,155 @@ def _generate_sub_periods(
     return sub_periods
 
 
+def _generate_sub_periods_from_balance(
+    parent_lord: str,
+    parent_start: datetime,
+    full_duration_years: float,
+    elapsed_years: float,
+) -> tuple[list[dict], float, float]:
+    """
+    Generate the REMAINING sub-periods of a period that is only PARTIALLY
+    left to run at `parent_start` -- i.e. the first Mahadasha (whose
+    balance is what's left of a Mahadasha that started before birth), or
+    recursively the first Bhukti of that first Mahadasha, etc.
+
+    Bug this fixes: naively calling `_generate_sub_periods(parent_lord,
+    parent_start, balance_years)` -- i.e. dividing only the *remaining*
+    balance into 9 sub-periods -- squeezes all 9 sub-periods into the
+    balance window. That's wrong: only the FIRST sub-period (the one
+    actually running at `parent_start`) is partial; every sub-period
+    after it must run its full, undivided natural length, exactly as if
+    the whole 9-part cycle had been laid out from the true (pre-birth)
+    start of the parent period.
+
+    Args:
+        parent_lord: Lord the full 9-part sub-period sequence starts from.
+        parent_start: The moment sub-periods should start being reported
+            from (e.g. birth datetime) -- NOT the true start of the
+            parent period.
+        full_duration_years: The parent period's TRUE, undivided length
+            (e.g. 20 years for a Venus Mahadasha), even though only part
+            of it remains at `parent_start`.
+        elapsed_years: How much of `full_duration_years` had already
+            passed before `parent_start` (so `full_duration_years -
+            elapsed_years` is the balance actually remaining).
+
+    Returns:
+        (sub_periods, first_full_duration_years, first_elapsed_years) --
+        sub_periods is the list of {"lord","start_date","end_date",
+        "duration_years"} dicts from the currently-running sub-period
+        (partial) through the last of the 9, in chronological order,
+        spanning parent_start to parent_start + (full_duration_years -
+        elapsed_years). The other two return values are the FULL
+        duration and elapsed time of that first (partial) sub-period,
+        so a caller can recurse into ITS sub-periods (e.g. Antaras of
+        the currently-running Bhukti) with this same balance-aware rule.
+    """
+    start_idx = PLANET_ORDER.index(parent_lord)
+
+    # Full-length (undivided) duration of each of the 9 sub-periods, as
+    # if the parent period ran its complete natural length.
+    full_subs = [
+        {
+            "lord": PLANET_ORDER[(start_idx + i) % 9],
+            "duration_years": full_duration_years * DASHA_YEARS[PLANET_ORDER[(start_idx + i) % 9]] / TOTAL_CYCLE_YEARS,
+        }
+        for i in range(9)
+    ]
+
+    # Find which of the 9 full sub-periods `elapsed_years` falls into --
+    # that's the one currently running at parent_start.
+    cum = 0.0
+    entry_idx = 8
+    elapsed_in_entry = elapsed_years
+    for i, sp in enumerate(full_subs):
+        if elapsed_years < cum + sp["duration_years"] or i == 8:
+            entry_idx = i
+            elapsed_in_entry = elapsed_years - cum
+            break
+        cum += sp["duration_years"]
+
+    sub_periods: list[dict] = []
+    current_start = parent_start
+    first_full_duration = full_subs[entry_idx]["duration_years"]
+    first_elapsed = max(0.0, elapsed_in_entry)
+
+    for offset, i in enumerate(range(entry_idx, 9)):
+        sp = full_subs[i]
+        duration_years = sp["duration_years"] - first_elapsed if offset == 0 else sp["duration_years"]
+        current_end = current_start + timedelta(days=duration_years * YEAR_DAYS)
+
+        sub_periods.append({
+            "lord": sp["lord"],
+            "start_date": current_start,
+            "end_date": current_end,
+            "duration_years": duration_years,
+        })
+        current_start = current_end
+
+    return sub_periods, first_full_duration, first_elapsed
+
+
+# Nested-key name used at each depth below Mahadasha, in order:
+# level 2 = Antardasha (stored under "bhuktis"), level 3 = Pratyantardasha
+# ("antaras"), level 4 = Sookshma Dasha ("sookshmas"), level 5 = Prana
+# Dasha ("pranas"). CHILD_KEYS[levels-2] is the key added at `levels`.
+CHILD_KEYS = ["bhuktis", "antaras", "sookshmas", "pranas"]
+
+
+def _expand_full_subtree(period: dict, remaining_keys: list[str]) -> None:
+    """
+    Recursively attach full (non-balance-partial) sub-periods to
+    `period` in place, one nested key per entry in `remaining_keys`, in
+    order -- e.g. remaining_keys=["antaras","sookshmas"] adds
+    period["antaras"], and to each of THOSE adds an "sookshmas" list.
+
+    Used for every branch of the tree except the single "currently
+    running at birth" chain (which instead uses
+    _expand_balance_subtree below), since only that one chain has a
+    partial first period at each level.
+    """
+    if not remaining_keys:
+        return
+    key, *rest = remaining_keys
+    children = _generate_sub_periods(period["lord"], period["start_date"], period["duration_years"])
+    period[key] = children
+    for child in children:
+        _expand_full_subtree(child, rest)
+
+
+def _expand_balance_subtree(
+    period: dict,
+    remaining_keys: list[str],
+    full_duration_years: float,
+    elapsed_years: float,
+) -> None:
+    """
+    Recursively attach sub-periods to `period` in place, one nested key
+    per entry in `remaining_keys`, where `period` itself is a PARTIAL
+    period (only part of `full_duration_years` remains, `elapsed_years`
+    of it already passed before `period["start_date"]`) -- i.e. this is
+    the chain of "currently running since before birth" periods:
+    Mahadasha -> its first Bhukti -> that Bhukti's first Antara -> etc.
+
+    Only the FIRST child at each level inherits this same
+    balance-partial treatment (it's the one actually running); every
+    other child runs its full natural length via _expand_full_subtree.
+    """
+    if not remaining_keys:
+        return
+    key, *rest = remaining_keys
+    children, child_full, child_elapsed = _generate_sub_periods_from_balance(
+        period["lord"], period["start_date"], full_duration_years, elapsed_years
+    )
+    period[key] = children
+    for idx, child in enumerate(children):
+        if idx == 0:
+            _expand_balance_subtree(child, rest, child_full, child_elapsed)
+        else:
+            _expand_full_subtree(child, rest)
+
+
 def generate_mahadasha_sequence(
     start_lord: str,
     start_date: datetime,
@@ -215,16 +364,21 @@ def compute_vimshottari_dasha(
         levels: How many levels deep to expand:
             1 = Mahadasha only
             2 = + Antardasha (Bhukti)
-            3 = + Pratyantardasha (Antara) [default]
+            3 = + Pratyantardasha (Antara)
+            4 = + Sookshma Dasha
+            5 = + Prana Dasha [deepest supported]
             Deeper levels cost more to compute (9x per level: 9
-            Mahadashas -> 81 Bhuktis -> 729 Antaras at levels=3), so
-            callers that only need top-level dasha timing can pass
-            levels=1 to skip the rest.
+            Mahadashas -> 81 Bhuktis -> 729 Antaras -> 6,561 Sookshmas ->
+            59,049 Pranas at levels=5), so callers that only need
+            top-level dasha timing should pass a smaller `levels` to
+            skip the rest.
 
     Returns:
         List of Mahadasha dicts. Each includes "bhuktis" (a list of the
-        same shape, nested) when levels >= 2, and each bhukti includes
-        "antaras" (again the same shape) when levels >= 3:
+        same shape, nested) when levels >= 2; each bhukti includes
+        "antaras" when levels >= 3; each antara includes "sookshmas"
+        when levels >= 4; each sookshma includes "pranas" when
+        levels >= 5:
         [
             {
                 "lord": "Venus", "start_date": ..., "end_date": ...,
@@ -233,7 +387,21 @@ def compute_vimshottari_dasha(
                     {
                         "lord": "Venus", "start_date": ..., "end_date": ...,
                         "duration_years": 1.667,
-                        "antaras": [ {...}, ... 9 items ... ],
+                        "antaras": [
+                            {
+                                "lord": ..., "start_date": ..., "end_date": ...,
+                                "duration_years": ...,
+                                "sookshmas": [
+                                    {
+                                        "lord": ..., "start_date": ..., "end_date": ...,
+                                        "duration_years": ...,
+                                        "pranas": [ {...}, ... 9 items ... ],
+                                    },
+                                    ... 9 items ...
+                                ],
+                            },
+                            ... 9 items ...
+                        ],
                     },
                     ... 9 items ...
                 ],
@@ -249,16 +417,25 @@ def compute_vimshottari_dasha(
         num_cycles=num_cycles,
     )
 
-    if levels >= 2:
-        for md in mahadashas:
-            md["bhuktis"] = _generate_sub_periods(
-                md["lord"], md["start_date"], md["duration_years"]
-            )
-            if levels >= 3:
-                for ad in md["bhuktis"]:
-                    ad["antaras"] = _generate_sub_periods(
-                        ad["lord"], ad["start_date"], ad["duration_years"]
-                    )
+    # Which nested keys to add below Mahadasha, in order -- e.g.
+    # levels=3 means CHILD_KEYS[:2] == ["bhuktis", "antaras"].
+    keys = CHILD_KEYS[: max(0, levels - 1)]
+
+    if keys:
+        for idx, md in enumerate(mahadashas):
+            if idx == 0:
+                # This Mahadasha is only a BALANCE (it started running
+                # before birth), so every level below it must be
+                # expanded with the same balance-aware rule, down to
+                # whatever depth was requested.
+                full_years = float(DASHA_YEARS[md["lord"]])
+                elapsed_years = full_years - md["duration_years"]
+                _expand_balance_subtree(md, keys, full_years, elapsed_years)
+            else:
+                # Every later Mahadasha in the sequence hasn't started
+                # yet, so it (and everything below it) runs its full
+                # natural length.
+                _expand_full_subtree(md, keys)
 
     return mahadashas
 
@@ -304,15 +481,17 @@ def get_vimshottari_dasha_for_chart(
 
 def find_current_period(dasha_tree: list[dict], at_datetime: datetime) -> dict | None:
     """
-    Walk a computed Vimshottari Dasha tree and find the Mahadasha /
-    Bhukti / Antara active at a given moment -- e.g. "what dasha is
+    Walk a computed Vimshottari Dasha tree and find the most specific
+    period (Mahadasha down through Prana Dasha, however deep the tree
+    was computed) active at a given moment -- e.g. "what dasha is
     running today?".
 
     Args:
         dasha_tree: The list returned by compute_vimshottari_dasha() (or
-            get_vimshottari_dasha_for_chart()). Must have been computed
-            with levels=3 for a full result; with fewer levels, the
-            corresponding keys below will be absent.
+            get_vimshottari_dasha_for_chart()). The deeper the tree was
+            computed (`levels`), the more specific a result this can
+            return; with fewer levels, the deeper keys below simply
+            won't exist and are skipped.
         at_datetime: The moment to look up. Must fall within the span
             covered by `dasha_tree` (i.e. within birth_datetime and
             birth_datetime + ~120*num_cycles years) or no match is found.
@@ -320,13 +499,24 @@ def find_current_period(dasha_tree: list[dict], at_datetime: datetime) -> dict |
     Returns:
         {
             "mahadasha": "Venus",
-            "antardasha": "Sun",     # only present if the tree has bhuktis
+            "antardasha": "Sun",        # only present if the tree has bhuktis
             "pratyantardasha": "Rahu",  # only present if it has antaras
-            "start_date": ...,        # of the most specific period found
+            "sookshma": "Jupiter",      # only present if it has sookshmas
+            "prana": "Saturn",          # only present if it has pranas
+            "start_date": ...,          # of the most specific period found
             "end_date": ...,
         }
         or None if at_datetime falls outside every period in the tree.
     """
+    # (level result key, nested list key) pairs, from Antardasha down to
+    # Prana Dasha -- mirrors CHILD_KEYS in dasha/vimshottari.py.
+    NESTED = [
+        ("antardasha", "bhuktis"),
+        ("pratyantardasha", "antaras"),
+        ("sookshma", "sookshmas"),
+        ("prana", "pranas"),
+    ]
+
     for md in dasha_tree:
         if not (md["start_date"] <= at_datetime < md["end_date"]):
             continue
@@ -337,30 +527,18 @@ def find_current_period(dasha_tree: list[dict], at_datetime: datetime) -> dict |
             "end_date": md["end_date"],
         }
 
-        bhuktis = md.get("bhuktis")
-        if not bhuktis:
-            return result
-
-        for ad in bhuktis:
-            if not (ad["start_date"] <= at_datetime < ad["end_date"]):
-                continue
-
-            result["antardasha"] = ad["lord"]
-            result["start_date"] = ad["start_date"]
-            result["end_date"] = ad["end_date"]
-
-            antaras = ad.get("antaras")
-            if not antaras:
-                return result
-
-            for pd in antaras:
-                if pd["start_date"] <= at_datetime < pd["end_date"]:
-                    result["pratyantardasha"] = pd["lord"]
-                    result["start_date"] = pd["start_date"]
-                    result["end_date"] = pd["end_date"]
-                    return result
-
-            return result
+        current = md
+        for result_key, list_key in NESTED:
+            children = current.get(list_key)
+            if not children:
+                break
+            match = next((c for c in children if c["start_date"] <= at_datetime < c["end_date"]), None)
+            if not match:
+                break
+            result[result_key] = match["lord"]
+            result["start_date"] = match["start_date"]
+            result["end_date"] = match["end_date"]
+            current = match
 
         return result
 

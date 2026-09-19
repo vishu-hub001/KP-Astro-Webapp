@@ -28,5 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = str(BASE_DIR / "data")
 NAKSHATRA_SUBLORD_TABLE = str(BASE_DIR / "data" / "nakshatra_sublord_table.json")
 HORARY_TABLE = str(BASE_DIR / "data" / "horary_249_table.json")
-PROFILES_STORE = str(BASE_DIR / "data" / "kundali_profiles.json")
+# Profiles are stored in a JSON file inside the app's data/ folder.
+# Optional: set the KP_PROFILES_STORE environment variable to use another path.
+import os
+LEGACY_PROFILES_STORE = str(BASE_DIR / "data" / "kundali_profiles.json")
+PROFILES_STORE = os.environ.get("KP_PROFILES_STORE", LEGACY_PROFILES_STORE)
 RESULTS_CACHE_DIR = str(BASE_DIR / "results" / "cache")

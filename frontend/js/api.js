@@ -3,8 +3,19 @@
 
 export const API = window.location.origin;
 
-export async function callApi(path, opts) {
-  const r = await fetch(API + path, opts);
+const AYA_KEY = "kp_ayanamsa";
+export const AYANAMSAS = { KRISHNAMURTI: "Krishnamurti (KP)", LAHIRI: "Lahiri (Chitrapaksha)" };
+export function getAyanamsa() {
+  try { const v = localStorage.getItem(AYA_KEY); if (v in AYANAMSAS) return v; } catch (e) {}
+  return "KRISHNAMURTI";
+}
+export function setAyanamsa(v) {
+  try { localStorage.setItem(AYA_KEY, v); } catch (e) {}
+}
+
+export async function callApi(path, opts = {}) {
+  const headers = { ...(opts.headers || {}), "X-Ayanamsa": getAyanamsa() };
+  const r = await fetch(API + path, { ...opts, headers });
   const body = await r.json().catch(() => ({}));
   if (!r.ok) throw new Error(body.detail || `Request failed (${r.status})`);
   return body;

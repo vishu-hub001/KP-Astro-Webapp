@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./styles.css">
+<script>try{var t=localStorage.getItem("kp_theme");if(t)document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
 </head>
 <body>
 <div class="shell">
@@ -31,7 +32,7 @@
         <button class="entry-trigger" id="entry-trigger">Birth details <span class="caret">▾</span></button>
         <div class="entry-popover" id="entry-popover">
           <div class="tb-field name"><label>Name</label><input type="text" id="tb-name" placeholder="Querent"></div>
-          <div class="tb-field"><label>Date (YYYY-MM-DD)</label><input type="date" id="tb-date"></div>
+          <div class="tb-field"><label>Date (YYYY-MM-DD)</label><input type="text" id="tb-date" placeholder="YYYY-MM-DD" inputmode="numeric" maxlength="10" pattern="\d{4}-\d{2}-\d{2}"></div>
           <div class="tb-field"><label>Time (HH:MM:SS)</label><input type="time" step="1" id="tb-time"></div>
           <div class="tb-field city">
             <label>City (auto-search)</label>
@@ -70,7 +71,7 @@
         </div>
         <div class="sb-navgroup">
           <div class="sb-navgroup-label">Charts analysis</div>
-          <button class="nav-btn" data-view="chart" data-title="Chart analysis" data-sub="D1 · Placidus cusps · Krishnamurti ayanamsa"><span class="ic">◆</span>Chart analysis</button>
+          <button class="nav-btn" data-view="chart" data-title="Chart analysis" data-sub="D1 · Placidus cusps · Sidereal"><span class="ic">◆</span>Chart analysis</button>
           <button class="nav-btn" data-view="planets" data-title="Planets analysis" data-sub="Sign, nakshatra, pada, star lord and sub lord for every planet"><span class="ic">☉</span>Planets analysis</button>
           <button class="nav-btn" data-view="houses" data-title="House analysis" data-sub="Cusp sub-lords and the four-level KP house significators"><span class="ic">⌂</span>House analysis</button>
           <button class="nav-btn" data-view="rashi" data-title="Rashi analysis" data-sub="The chart re-read sign by sign"><span class="ic">◎</span>Rashi analysis</button>
@@ -84,6 +85,10 @@
         <div class="sb-navgroup">
           <div class="sb-navgroup-label">Tools</div>
           <button class="nav-btn" data-view="horary" data-title="Horary judgment" data-sub="Prashna cast for the moment of judgment, checked against the ruling planets"><span class="ic">?</span>Horary (Prashna)</button>
+        </div>
+        <div class="sb-navgroup">
+          <div class="sb-navgroup-label">Export</div>
+          <button class="nav-btn" data-view="print" data-title="Print &amp; copy" data-sub="Copy the key KP data as text for an AI chat, or print / save as PDF"><span class="ic">⎙</span>Print / Copy for AI</button>
         </div>
         <div class="sb-navgroup">
           <div class="sb-navgroup-label">Data</div>

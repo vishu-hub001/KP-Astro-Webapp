@@ -21,11 +21,12 @@ import * as Dasha from "./sections/dasha.js";
 import * as Horary from "./sections/horary.js";
 import * as Profiles from "./sections/profiles.js";
 import * as Settings from "./sections/settings.js";
+import * as Print from "./sections/print.js";
 
 const SECTIONS = {
   overview: Overview, chart: Chart, planets: Planets, houses: Houses, life: Life,
   rashi: Rashi, nakshatra: Nakshatra, dasha: Dasha, horary: Horary,
-  profiles: Profiles, settings: Settings,
+  profiles: Profiles, settings: Settings, print: Print,
 };
 
 let activeView = "overview";
@@ -84,6 +85,19 @@ const cityInput = document.getElementById("tb-city");
 const citySuggest = document.getElementById("city-suggest");
 
 nameInput.addEventListener("input", () => setName(nameInput.value));
+
+// Force YYYY-MM-DD typing order on every platform (native <input type=date>
+// pickers render in the OS/browser locale, which on many Android devices
+// shows DD-MM-YYYY or MM-DD-YYYY -- auto-inserting the dashes here keeps
+// the same explicit year-month-day order everywhere).
+dateInput.addEventListener("input", () => {
+  const digits = dateInput.value.replace(/\D/g, "").slice(0, 8);
+  let out = digits.slice(0, 4);
+  if (digits.length > 4) out += "-" + digits.slice(4, 6);
+  if (digits.length > 6) out += "-" + digits.slice(6, 8);
+  dateInput.value = out;
+});
+
 [dateInput, timeInput, latInput, lngInput, tzInput].forEach(inp => {
   inp.addEventListener("change", syncBirthFromInputs);
 });
@@ -237,11 +251,13 @@ document.getElementById("sb-del").addEventListener("click", async () => {
 
 /* ---------------- defaults + boot ---------------- */
 (function seed() {
-  dateInput.value = "1990-05-21";
-  timeInput.value = "14:35:00";
+  dateInput.value = "1996-02-28";
+  timeInput.value = "18:45:00";
   tzInput.value = "5.5";
   latInput.value = "28.6139";
   lngInput.value = "77.2090";
+  cityInput.value = "Delhi, India";
+  setCityLabel("Delhi, India");
   syncBirthFromInputs();
   refreshProfileDropdown();
   renderActive();
